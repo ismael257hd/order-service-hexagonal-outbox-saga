@@ -1,0 +1,51 @@
+# ============================
+# Node / Angular
+# ============================
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.angular/cache/
+/frontend/.env
+
+# ============================
+# Java / Spring Boot
+# ============================
+/backend/target/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/.env
+
+# ============================
+# Eclipse
+# ============================
+*.launch
+.metadata/
+.recommenders/
+.settings/
+bin/
+
+# ============================
+# IDEs e editores
+# ============================
+.vscode/
+.idea/
+*.iml
+
+# ============================
+# Sistema operacional
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Logs
+# ============================
+*.log
+/backend/logs/
+/frontend/logs/
+
+# ============================
+# Build output
+# ============================
+/*.jar
+/*.war
