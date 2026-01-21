@@ -1,0 +1,4 @@
+com\ismael\order\application\saga\OrderSagaOrchestratorTest.class
+com\ismael\order\domain\OrderTest.class
+com\ismael\order\application\usecase\CreateOrderUseCaseTest.class
+com\ismael\order\integration\OrderIntegrationTest.class

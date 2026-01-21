@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: order-api
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/orders}
+    username: ${SPRING_DATASOURCE_USERNAME:order_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:order_pass}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true # Comando para o Spring
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: false # Comando direto para o motor do Hibernate
+        format_sql: false
+        highlight_sql: false
+
+  rabbitmq:
+    host: ${SPRING_RABBITMQ_HOST:localhost}
+    port: 5672
+    username: ${SPRING_RABBITMQ_USERNAME:guest}
+    password: ${SPRING_RABBITMQ_PASSWORD:guest}
+
+# Adicione esta seção na raiz do arquivo para silenciar os logs de SQL
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: OFF
+        orm:
+          jdbc:
+            bind: OFF
